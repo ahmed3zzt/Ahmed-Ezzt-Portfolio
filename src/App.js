@@ -6,41 +6,69 @@ import Skills from "./components/Skills";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import AnimatedCursor from "react-animated-cursor";
+import Projects from "./components/Projects";
+import { useLayoutEffect, useState } from "react";
+import { Circles } from "react-loader-spinner";
 
 function App() {
+  const [loading, setLoading] = useState(true);
+
+  useLayoutEffect(() => {
+    setLoading(true);
+    setTimeout(() => {
+      setLoading(false);
+    }, 5000);
+  }, []);
   return (
-    <div className="dark">
-      <AnimatedCursor
-        innerSize={8}
-        outerSize={42}
-        color="0 , 114 , 245 "
-        outerAlpha={0.2}
-        innerScale={0.7}
-        outerScale={2}
-        clickables={[
-          "a",
-          'input[type="text"]',
-          'input[type="email"]',
-          'input[type="number"]',
-          'input[type="submit"]',
-          'input[type="image"]',
-          "label[for]",
-          "select",
-          "textarea",
-          "button",
-          ".link",
-          "img",
-          ".text-primary",
-        ]}
-      />
-      <Header />
-      <Hero />
-      <About />
-      <Services />
-      <Skills />
-      <Contact />
-      <Footer />
-    </div>
+    <>
+      {loading ? (
+        <div className="absolute bg-darkBackground w-full h-screen top-0 left-0 flex items-center justify-center">
+          <Circles
+            height="100"
+            width="100"
+            color="#2b65e0"
+            ariaLabel="circles-loading"
+            wrapperStyle={{}}
+            wrapperClass=""
+            visible={true}
+          />
+        </div>
+      ) : (
+        <div className="dark">
+          <AnimatedCursor
+            innerSize={8}
+            outerSize={42}
+            color="0 , 114 , 245 "
+            outerAlpha={0.2}
+            innerScale={0.7}
+            outerScale={2}
+            clickables={[
+              "a",
+              'input[type="text"]',
+              'input[type="email"]',
+              'input[type="number"]',
+              'input[type="submit"]',
+              'input[type="image"]',
+              "label[for]",
+              "select",
+              "textarea",
+              "button",
+              ".link",
+              "img",
+              ".text-primary",
+            ]}
+          />
+          <Header />
+          <Hero />
+          <About />
+          <Projects />
+          <Services />
+          <Skills />
+          <Contact />
+          <Footer />
+        </div>
+      )}
+    </>
   );
 }
 
