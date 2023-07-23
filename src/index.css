@@ -8,7 +8,9 @@ body {
   background-repeat: no-repeat;
   background-position: 50% 0%;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 /* Firefox */
 * {
   scrollbar-width: thin;

@@ -2,7 +2,7 @@ import React from "react";
 
 function Contact() {
   return (
-    <div className="container mx-auto p-8">
+    <div className="container mx-auto p-8" id="contact">
       <section className="bg-white py-20 lg:py-[120px] overflow-hidden relative z-10">
         <div className="container">
           <div className="flex flex-wrap lg:justify-between -mx-4">

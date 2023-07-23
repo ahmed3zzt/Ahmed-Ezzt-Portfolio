@@ -26,7 +26,7 @@ function Projects() {
     },
   ];
   return (
-    <>
+    <div id="projects">
       <div className="flex flex-col w-full items-center my-8 flex-wrap">
         <h1 class="text-3xl font-semibold text-gray-800 uppercase lg:text-4xl dark:text-white">
           My Projects
@@ -68,7 +68,7 @@ function Projects() {
           ))}
         </div>
       </div>
-    </>
+    </div>
   );
 }
 

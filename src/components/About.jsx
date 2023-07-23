@@ -3,7 +3,7 @@ import img from "../assets/images/About.png";
 
 function About() {
   return (
-    <>
+    <div id="about">
       <div className="flex flex-col w-full items-center my-8 flex-wrap">
         <h1 class="text-3xl font-semibold text-gray-800 uppercase lg:text-4xl dark:text-white">
           About ME
@@ -46,7 +46,7 @@ function About() {
           <img src={img} alt="" className="w-3/4 mx-auto" />
         </div>
       </div>
-    </>
+    </div>
   );
 }
 

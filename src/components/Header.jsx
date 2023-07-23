@@ -16,27 +16,36 @@ function Header() {
         <div className="navbar-center">
           <a
             className="navbar-item cursor-pointer hover:text-primary transition-all duration-300"
-            href="/"
+            href="#about"
           >
             About
           </a>
           <a
             className="navbar-item cursor-pointer hover:text-primary transition-all duration-300"
-            href="/"
+            href="#projects"
           >
             Projects
           </a>
           <a
             className="navbar-item cursor-pointer hover:text-primary transition-all duration-300"
-            href="/"
+            href="#services"
+          >
+            Services
+          </a>
+          <a
+            className="navbar-item cursor-pointer hover:text-primary transition-all duration-300"
+            href="#skills"
           >
             Skills
           </a>
         </div>
         <div className="navbar-end">
-          <h3 className="p-4 text-sm text-darkText bg-primary rounded-full cursor-pointer hover:bg-darkAccent shadow-lg transition-colors duration-300">
+          <a
+            href="#contact"
+            className=" block p-4 text-sm text-darkText bg-primary rounded-full cursor-pointer hover:bg-darkAccent shadow-lg transition-colors duration-300"
+          >
             Contact Me
-          </h3>
+          </a>
         </div>
       </div>
     </>

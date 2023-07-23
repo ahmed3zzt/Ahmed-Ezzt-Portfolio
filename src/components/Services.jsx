@@ -3,7 +3,7 @@ import img from "../assets/images/Services.png";
 
 function Services() {
   return (
-    <section className="mt-24 dark:bg-gray-900">
+    <section className="mt-24 dark:bg-gray-900" id="services">
       <div className="container mx-auto">
         <div className="lg:flex lg:items-center">
           <div className="w-full space-y-12 lg:w-1/2 ">
