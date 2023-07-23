@@ -18,7 +18,7 @@ function Services() {
               </div>
             </div>
             <div className="md:flex md:items-start md:-mx-4">
-              <span className="inline-block p-2 text-primary bg-lightBackground rounded-xl md:mx-4 dark:text-white dark:bg-primary">
+              <span className="inline-block p-2 text-primary bg-lightBackground rounded-xl md:mx-4 dark:text-white ">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="w-6 h-6"
@@ -46,7 +46,7 @@ function Services() {
               </div>
             </div>
             <div className="md:flex md:items-start md:-mx-4">
-              <span className="inline-block p-2 text-primary bg-lightBackground rounded-xl md:mx-4 dark:text-white dark:bg-primary">
+              <span className="inline-block p-2 text-primary bg-lightBackground rounded-xl md:mx-4 dark:text-white ">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="w-6 h-6"
@@ -74,7 +74,7 @@ function Services() {
               </div>
             </div>
             <div className="md:flex md:items-start md:-mx-4">
-              <span className="inline-block p-2 text-primary bg-lightBackground rounded-xl md:mx-4 dark:text-white dark:bg-primary">
+              <span className="inline-block p-2 text-primary bg-lightBackground rounded-xl md:mx-4 dark:text-white ">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="w-6 h-6"
