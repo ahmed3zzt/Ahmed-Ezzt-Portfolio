@@ -1,15 +1,15 @@
-import project1 from "../assets/images/projects/modern-tempelate.png";
-import project2 from "../assets/images/projects/personal.png";
-import project3 from "../assets/images/projects/elzero-tempelate.png";
-import project4 from "../assets/images/projects/landing-2.png";
-import project5 from "../assets/images/projects/education.png";
-import project6 from "../assets/images/projects/dr.png";
+import project1 from "../src/assets/images/projects/modern-tempelate.png";
+import project2 from "../src/assets/images/projects/personal.png";
+import project3 from "../src/assets/images/projects/elzero-tempelate.png";
+import project4 from "../src/assets/images/projects/landing-2.png";
+import project5 from "../src/assets/images/projects/education.png";
+import project6 from "../src/assets/images/projects/dr.png";
 
 import { DiWebplatform } from "react-icons/di";
 import { AiOutlineMobile } from "react-icons/ai";
 import { BiLogoWordpress } from "react-icons/bi";
 
-export const Developer = {
+export const DeveloperInfo = {
   name: "Ahmed Ezzt Sabet",
   about:
     "I am Ahmed Ezzt Egyption Frontend Developer , i Have An Experience In HTNL CSS JAVASCRIPT AND REACT js , I Have 2 Years Of experience in Front End Field , I Build alot of Projects In Deffrience Fields Mobile Web CMS ",
@@ -46,11 +46,25 @@ export const Developer = {
       gitLink: "https://github.com/ahmed3zzt/Landing-Page-3-Personal-Website",
     },
     {
-      title: "Elzero Front End Course Tempelate",
+      title: "Elzero Front End Course",
       image: project3,
       desc: "This Is Tempelate From ELzero Course ",
       link: "https://ahmed3zzt.github.io/Landing-Page-Tempelate-1/",
       gitLink: "https://github.com/ahmed3zzt/Landing-Page-Tempelate-1",
+    },
+    {
+      title: "Simple Education ",
+      image: project5,
+      desc: "Education Platform Build In WordPress CMS",
+      link: "http://ahmed3zzt.byethost7.com/",
+      gitLink: "https://github.com/ahmed3zzt?tab=repositories",
+    },
+    {
+      title: "Simple Clicic",
+      image: project6,
+      desc: "Simple Clicic Platform Build In WordPress CMS",
+      link: "https://dr-osama-hamdy.byethost8.com/",
+      gitLink: "https://github.com/ahmed3zzt?tab=repositories",
     },
     {
       title: "Simple Landing Page",
@@ -59,34 +73,20 @@ export const Developer = {
       link: "https://ahmed3zzt.github.io/Landing-Page-template-2/",
       gitLink: "https://github.com/ahmed3zzt/Landing-Page-template-2",
     },
-    {
-      title: "Simple Education Platform ",
-      image: project5,
-      desc: "Simple Education Platform Build In WordPress CMS",
-      link: "http://ahmed3zzt.byethost7.com/",
-      gitLink: "/",
-    },
-    {
-      title: "Simple Clicic",
-      image: project6,
-      desc: "Simple Clicic Platform Build In WordPress CMS",
-      link: "https://dr-osama-hamdy.byethost8.com/",
-      gitLink: "/",
-    },
   ],
   services: [
     {
-      icon: <DiWebplatform />,
+      icon: <DiWebplatform scale={2} />,
       title: "Front End Developer",
       desc: "I Can Build An Amazing And Modern UI BY Front End Technology",
     },
     {
-      icon: <AiOutlineMobile />,
+      icon: <AiOutlineMobile scale={2} />,
       title: "Mobile Developer",
       desc: "I Have A great Experience In Build Apps By Flutter",
     },
     {
-      icon: <BiLogoWordpress />,
+      icon: <BiLogoWordpress scale={2} />,
       title: "Wordpress Developer",
       desc: "I Build Many Projects In Wordpress CMS so I Have Experience In Build Websites By WordPress",
     },

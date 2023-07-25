@@ -1,5 +1,6 @@
 import React from "react";
 import img from "../assets/images/About.png";
+import { DeveloperInfo } from "../content";
 
 function About() {
   return (
@@ -20,21 +21,7 @@ function About() {
           <h2 className="text-5xl">Short Story</h2>
           <br />
           <p className="text-gray-10 text-xl">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti
-            quasi, praesentium quis asperiores dolor numquam vitae perferendis,
-            consequuntur tempora porro esse illum repudiandae? Fugiat natus ipsa
-            illum, esse aliquid explicabo consequatur officiis suscipit fuga
-            voluptatem hic cupiditate libero! Ipsum accusamus laboriosam
-            explicabo sint a incidunt iste libero totam optio et aspernatur quis
-            repellendus odio accusantium dolorum amet illum harum quaerat fugit
-            consequuntur neque eos, saepe rerum quae. Eum nam amet beatae
-            ratione magni, asperiores iure esse eius, accusamus quis labore
-            iusto fugiat. Distinctio, aliquid adipisci. Labore minima inventore
-            voluptatibus distinctio explicabo voluptates, commodi numquam error
-            deserunt itaque deleniti consectetur expedita impedit enim
-            reiciendis accusantium assumenda doloremque soluta. Perspiciatis,
-            illum praesentium? Dolores sed, minima nostrum suscipit
-            exercitationem a quaerat et nemo!
+            {DeveloperInfo.about}
           </p>
           <br />
           <div className="flex gap-2">

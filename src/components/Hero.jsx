@@ -1,5 +1,6 @@
 import React from "react";
 import Typewriter from "typewriter-effect";
+import { DeveloperInfo } from "../content";
 
 function Hero() {
   return (
@@ -16,7 +17,7 @@ function Hero() {
               I'm.
               <br />
             </span>
-            Ahmed Ezzt Sabet
+            {DeveloperInfo.name}
           </h1>
           <div className="text-4xl text-primary flex gap-2 md:gap-4">
             <div className="text-darkText ">Work As </div>

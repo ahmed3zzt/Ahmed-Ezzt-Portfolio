@@ -1,30 +1,7 @@
 import React from "react";
 import { BiLinkExternal, BiLogoGithub } from "react-icons/bi";
-import project1 from "../assets/images/projects/modern-tempelate.png";
+import { DeveloperInfo } from "../content";
 function Projects() {
-  const projects = [
-    {
-      title: "Project 1",
-      image: project1,
-      desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit",
-      link: "/",
-      gitLink: "/",
-    },
-    {
-      title: "Project 2",
-      image: project1,
-      desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit",
-      link: "/",
-      gitLink: "/",
-    },
-    {
-      title: "Project 3",
-      image: project1,
-      desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit",
-      link: "/",
-      gitLink: "/",
-    },
-  ];
   return (
     <div id="projects">
       <div className="flex flex-col w-full items-center my-8 flex-wrap">
@@ -39,9 +16,9 @@ function Projects() {
       </div>
       <div className="container">
         <div className="flex gap-4 flex-wrap justify-center">
-          {projects.map((project, index) => (
+          {DeveloperInfo.projects.map((project, index) => (
             <div
-              className="project p-4 w-full md:w-1/4 bg-darkSecondary rounded-lg"
+              className="project p-4 w-full md:w-[30%] bg-darkSecondary rounded-lg"
               key={index}
             >
               <img
@@ -59,7 +36,7 @@ function Projects() {
                   </a>
                 </li>
                 <li className="link bg-darkBackground text-darkText p-4 rounded-full ">
-                  <a href={project.getLink} target="_blank" rel="noreferrer">
+                  <a href={project.gitLink} target="_blank" rel="noreferrer">
                     <BiLogoGithub size={20} />
                   </a>
                 </li>

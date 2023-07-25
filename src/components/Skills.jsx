@@ -1,22 +1,8 @@
 import React from "react";
+import { DeveloperInfo } from "../content";
 
 function Skills() {
-  const Skills = [
-    { title: "HTML", precent: "90" },
-    { title: "CSS", precent: "80" },
-    { title: "JAVASCRIPT", precent: "70" },
-    { title: "SASS", precent: "80" },
-    { title: "TAILWINDCSS", precent: "80" },
-    { title: "REACT JS", precent: "70" },
-    { title: "NEXT JS", precent: "60" },
-  ];
-  const SkillsMobile = [
-    { title: "DART", precent: "80" },
-    { title: "FLUTTER", precent: "85" },
-    { title: "PROVIDER", precent: "70" },
-    { title: "FIREBASE", precent: "60" },
-    { title: "BLOC", precent: "75" },
-  ];
+
   return (
     <div id="skills">
       <div className="flex flex-col w-full items-center my-8 flex-wrap">
@@ -34,8 +20,8 @@ function Skills() {
       <div className="container mx-auto">
         <div className="flex justify-center gap-4 flex-col md:flex-row ">
           <div className="md:w-1/2 rounded-3xl bg-darkSecondary h-[500px] p-4">
-            <h1 className="text-2xl">WEB SKILLS</h1>
-            {Skills.map((skill) => (
+            <h1 className="text-2xl">MAIN SKILLS</h1>
+            {DeveloperInfo.mainSkills.map((skill) => (
               <div className="flex gap-2 my-8 items-center" key={skill.title}>
                 <p className="tech text-lg">{skill.title}</p>
                 <progress
@@ -48,8 +34,8 @@ function Skills() {
             ))}
           </div>
           <div className="md:w-1/2 rounded-3xl bg-darkSecondary h-[500px] p-4">
-            <h1 className="text-2xl">MOBILE SKILLS</h1>
-            {SkillsMobile.map((skill) => (
+            <h1 className="text-2xl">GENERAL SKILLS</h1>
+            {DeveloperInfo.generalSkills.map((skill) => (
               <div className="flex gap-2 my-8 items-center" key={skill.title}>
                 <p className="tech text-lg">{skill.title}</p>
                 <progress
