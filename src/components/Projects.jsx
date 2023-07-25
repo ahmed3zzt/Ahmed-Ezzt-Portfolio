@@ -1,6 +1,6 @@
 import React from "react";
 import { BiLinkExternal, BiLogoGithub } from "react-icons/bi";
-import project1 from "../assets/images/blog-2.png";
+import project1 from "../assets/images/projects/modern-tempelate.png";
 function Projects() {
   const projects = [
     {
