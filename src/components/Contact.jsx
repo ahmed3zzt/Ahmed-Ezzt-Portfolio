@@ -3,7 +3,7 @@ import React from "react";
 function Contact() {
   return (
     <div className="container mx-auto p-8" id="contact">
-      <section className="bg-white py-20 lg:py-[120px] overflow-hidden relative z-10">
+      <section className="bg-white dark:bg-darkBackground dark:text-darkText py-20 lg:py-[120px] overflow-hidden relative z-10">
         <div className="container">
           <div className="flex flex-wrap lg:justify-between -mx-4">
             <div className="w-full lg:w-1/2 xl:w-6/12 px-4">
@@ -33,7 +33,7 @@ function Contact() {
               </div>
             </div>
             <div className="w-full lg:w-1/2 xl:w-5/12 px-4">
-              <div className="bg-white relative rounded-lg p-8 sm:p-12 shadow-lg">
+              <div className="bg-white dark:bg-darkBackground dark:text-darkText relative rounded-lg p-8 sm:p-12 shadow-lg">
                 <form>
                   <div className="mb-6">
                     <input
@@ -45,7 +45,7 @@ function Contact() {
                   py-3
                   px-[14px]
                   text-body-color text-base
-                  
+                  dark:bg-darkSecondary
                   outline-none
                   focus-visible:shadow-none
                   focus:border-primary
@@ -62,7 +62,8 @@ function Contact() {
                   py-3
                   px-[14px]
                   text-body-color text-base
-                  
+                                    dark:bg-darkSecondary
+
                   outline-none
                   focus-visible:shadow-none
                   focus:border-primary
@@ -79,7 +80,8 @@ function Contact() {
                   py-3
                   px-[14px]
                   text-body-color text-base
-                  
+                                    dark:bg-darkSecondary
+
                   outline-none
                   focus-visible:shadow-none
                   focus:border-primary
@@ -96,7 +98,8 @@ function Contact() {
                   py-3
                   px-[14px]
                   text-body-color text-base
-                  
+                                    dark:bg-darkSecondary
+
                   resize-none
                   outline-none
                   focus-visible:shadow-none

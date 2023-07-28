@@ -12,17 +12,19 @@ import { Circles } from "react-loader-spinner";
 
 function App() {
   const [loading, setLoading] = useState(true);
+  const [theme, setTheme] = useState("light");
 
   useLayoutEffect(() => {
     setLoading(true);
     setTimeout(() => {
       setLoading(false);
     }, 5000);
+    setTheme(localStorage.getItem("theme"));
   }, []);
   return (
-    <>
+    <div className={`${theme}`}>
       {loading ? (
-        <div className="absolute bg-darkBackground w-full h-screen top-0 left-0 flex items-center justify-center">
+        <div className="absolute bg-white dark:bg-darkBackground w-full h-screen top-0 left-0 flex items-center justify-center">
           <Circles
             height="100"
             width="100"
@@ -34,7 +36,7 @@ function App() {
           />
         </div>
       ) : (
-        <div className="dark">
+        <div className="dark:bg-darkBackground dark:text-darkText">
           <AnimatedCursor
             innerSize={8}
             outerSize={42}
@@ -58,7 +60,7 @@ function App() {
               ".text-primary",
             ]}
           />
-          <Header />
+          <Header theme={theme} setTheme={setTheme} />
           <Hero />
           <About />
           <Projects />
@@ -68,7 +70,7 @@ function App() {
           <Footer />
         </div>
       )}
-    </>
+    </div>
   );
 }
 

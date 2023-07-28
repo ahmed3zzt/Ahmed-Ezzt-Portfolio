@@ -76,17 +76,17 @@ export const DeveloperInfo = {
   ],
   services: [
     {
-      icon: <DiWebplatform scale={2} />,
+      icon: <DiWebplatform size={`25px`} />,
       title: "Front End Developer",
       desc: "I Can Build An Amazing And Modern UI BY Front End Technology",
     },
     {
-      icon: <AiOutlineMobile scale={2} />,
+      icon: <AiOutlineMobile size={`25px`} />,
       title: "Mobile Developer",
       desc: "I Have A great Experience In Build Apps By Flutter",
     },
     {
-      icon: <BiLogoWordpress scale={2} />,
+      icon: <BiLogoWordpress size={`25px`} />,
       title: "Wordpress Developer",
       desc: "I Build Many Projects In Wordpress CMS so I Have Experience In Build Websites By WordPress",
     },

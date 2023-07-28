@@ -6,14 +6,14 @@ function About() {
   return (
     <div id="about">
       <div className="flex flex-col w-full items-center my-8 flex-wrap">
-        <h1 class="text-3xl font-semibold text-gray-800 uppercase lg:text-4xl dark:text-white">
+        <h1 className="text-3xl font-semibold text-gray-800 uppercase lg:text-4xl dark:text-white">
           About ME
         </h1>
 
-        <div class="mt-2">
-          <span class="inline-block w-40 h-1 rounded-full bg-primary"></span>
-          <span class="inline-block w-3 h-1 ml-1 rounded-full bg-primary"></span>
-          <span class="inline-block w-1 h-1 ml-1 rounded-full bg-primary"></span>
+        <div className="mt-2">
+          <span className="inline-block w-40 h-1 rounded-full bg-primary"></span>
+          <span className="inline-block w-3 h-1 ml-1 rounded-full bg-primary"></span>
+          <span className="inline-block w-1 h-1 ml-1 rounded-full bg-primary"></span>
         </div>
       </div>
       <div className="container mx-auto flex flex-col-reverse md:flex-row  md:items-center gap-4">

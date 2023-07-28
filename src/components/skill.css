@@ -1,0 +1,33 @@
+progress {
+  /* style rules */
+  display: block;
+  border-radius: 16px;
+}
+progress::-webkit-progress-bar {
+  /* style rules */
+  background-color: whitesmoke;
+  border-radius: 16px;
+}
+progress::-webkit-progress-value {
+  /* style rules */
+  background-color: #2b65e0;
+  border-radius: 16px;
+}
+
+progress::-moz-progress-bar {
+  /* style rules */
+  background-color: #2b65e0;
+  border-radius: 16px;
+}
+
+.dark progress::-webkit-progress-bar {
+  /* style rules */
+  background-color: darkgray;
+  border-radius: 16px;
+}
+
+.dark progress::-moz-progress-bar {
+  /* style rules */
+  background-color: #2b65e0;
+  border-radius: 16px;
+}

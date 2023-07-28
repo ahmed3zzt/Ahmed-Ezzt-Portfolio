@@ -19,9 +19,12 @@ function Services() {
               </div>
             </div>
             <div className="container">
-              {DeveloperInfo.services.map((service) => (
-                <div className="md:flex md:items-start md:-mx-4 m-6">
-                  <span className="inline-block p-2 text-primary bg-lightBackground rounded-xl md:mx-4 dark:text-white ">
+              {DeveloperInfo.services.map((service, index) => (
+                <div
+                  className="md:flex md:items-start md:-mx-4 m-6"
+                  key={index}
+                >
+                  <span className="inline-block p-2 text-white bg-primary rounded-xl md:mx-4 dark:text-white ">
                     {service.icon}
                   </span>
                   <div className="mt-4 md:mx-4 md:mt-0">

@@ -20,7 +20,7 @@ function Hero() {
             {DeveloperInfo.name}
           </h1>
           <div className="text-4xl text-primary flex gap-2 md:gap-4">
-            <div className="text-darkText ">Work As </div>
+            <div className="dark:text-darkText text-lightText">Work As </div>
             <Typewriter
               options={{
                 strings: ["Front End Developer", "Mobile Developer"],
