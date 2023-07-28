@@ -76,7 +76,7 @@ function Header(props) {
                   ></div>
                 </div>
                 <div className="ml-3 dark:text-white text-gray-900 font-medium">
-                  {props.theme === "light" ? "Dark Theme" : "Light Mode"}
+                  {props.theme === "light" ? "Dark Mode" : "Light Mode"}
                 </div>
               </label>
             </div>
